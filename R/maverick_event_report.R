@@ -1,0 +1,119 @@
+#' The MAVERICK event report level dataset
+#'
+#' The Modes and Agents of Election-Related Violence in Côte d'Ivoire and Kenya
+#' (MAVERICK) is an event report level dataset of electoral violence incidents.
+#' @format A data frame with 3287 rows and 108 columns.
+#' \describe{
+#' \item{id}{A unique event report identifier.}
+#' \item{event_id}{A unique event identifier assigned by the coders. Needed to aggregate event reports into events.}
+#' \item{country}{A character class variable that contains the name of the country in which the event took place.}
+#' \item{election}{A character class variable that contains the name of the election to which the event was most closely associated.}
+#' \item{certain}{A numeric class variable that denotes the number of inclusion criteria that the event report fulfilled.}
+#' \item{certain1}{A integer class variable that denotes whether the reported event was inferred to be election-related because the event report or another event report explicitly identified the event as election-related.}
+#' \item{certain2}{A integer class variable that denotes whether the reported event was inferred to be election-related because at least one of the actors involved had explicit ties to a political party or was referred to by their party affiliation.}
+#' \item{certain3}{A integer class variable that denotes whether the reported event was inferred to be election-related because at least one of the targets was election-related, such as voters at a polling station, political candidates, election observers, security forces deployed to overlook the election, electoral material, or electoral infrastructure.}
+#' \item{certain4}{A integer class variable that denotes whether the reported event was inferred to be election-related because the reported purpose of the event was to influence an electoral process or outcome.}
+#' \item{certain5}{A integer class variable that denotes whether the reported event was inferred to be election-related because the event was part of an episode of electoral violence or occurred as a reaction to an earlier electoral violence event.}
+#' \item{certain6}{A integer class variable that denotes whether the the reported event was inferred to be election-related because it occurred at most 6 months prior to or after an election.}
+#' \item{date_start}{A character class variable that contains the earliest possible event date expressed in YYYY-MM-DD format.}
+#' \item{date_end}{A character class variable that contains the latest possible event date expressed in YYYY-MM-DD format.}
+#' \item{city}{A character class variable that contains the name of the city or village in which the event took place.}
+#' \item{location}{A character class variable that contains a text description of the most precise event location described in the report.}
+#' \item{latitude}{A numeric class variable that contains the latitude for the location indicated in \emph{location}.}
+#' \item{longitude}{A numeric class variable that contains the longitude for the location indicated in \emph{location}.}
+#' \item{geo_precision}{A numeric class variable that denotes how precisely the geo-coordinates are coded, ranging from the country level (1) to the exact street or building (6).}
+#' \item{actor1}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor1_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor1_type}{A character class variable that records the type of actor.}
+#' \item{actor1_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor1_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor1_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor1_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor1_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor1_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor1_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor1_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor1_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{actor2}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor2_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor2_type}{A character class variable that records the type of actor.}
+#' \item{actor2_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor2_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor2_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor2_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor2_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor2_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor2_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor2_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor2_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{actor3}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor3_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor3_type}{A character class variable that records the type of actor.}
+#' \item{actor3_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor3_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor3_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor3_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor3_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor3_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor3_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor3_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor3_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{actor4}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor4_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor4_type}{A character class variable that records the type of actor.}
+#' \item{actor4_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor4_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor4_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor4_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor4_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor4_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor4_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor4_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor4_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{actor5}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor5_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor5_type}{A character class variable that records the type of actor.}
+#' \item{actor5_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor5_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor5_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor5_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor5_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor5_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor5_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor5_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor5_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{actor6}{A character class variable that contains the name of the actor involved in the event.}
+#' \item{actor6_id}{A unique actor identifier assigned by the coders.}
+#' \item{actor6_type}{A character class variable that records the type of actor.}
+#' \item{actor6_subtype}{A character class variable that records the subtype of actor.}
+#' \item{actor6_party}{A character class variable that records the party affiliation of actor.}
+#' \item{actor6_violence}{A character class variable that records all forms of violence used by the actor.}
+#' \item{actor6_precision}{A numeric class variable that denotes how precisely the actor information is coded.}
+#' \item{actor6_initiator}{An integer class variable that denotes whether the actor was the initiator of the violence.}
+#' \item{actor6_perpetrator}{An integer class variable that denotes whether the actor was a perpetrator of the violence.}
+#' \item{actor6_intervener}{An integer class variable that denotes whether the actor was an intervener in the violence.}
+#' \item{actor6_bystander}{An integer class variable that denotes whether the actor was a passive bystander to the violence.}
+#' \item{actor6_victim}{An integer class variable that denotes whether the actor was also a victim of the violence.}
+#' \item{event_context}{A character class variable that records the context in which the violence took place.}
+#' \item{target}{A character class variable that records the primary target of the violence}
+#' \item{deaths_best}{An integer class variable that records the best estimated number of deaths.}
+#' \item{deaths_low}{An integer class variable that records the lowest estimated number of deaths.}
+#' \item{deaths_high}{An integer class variable that records the highest estimated number of deaths.}
+#' \item{injuries_best}{An integer class variable that records the best estimated number of injured people.}
+#' \item{injuries_low}{An integer class variable that records the lowest estimated number of injured people.}
+#' \item{injuries_high}{An integer class variable that records the highest estimated number of injured people.}
+#' \item{displacement}{An integer class variable that denotes whether the event resulted in displacement.}
+#' \item{damage}{An integer class variable that denotes whether the event resulted in material destruction.}
+#' \item{source}{A character class variable that records the source.}
+#' \item{number_of_sources}{An integer class variable that records the number of sources the event is based on. Only relevant once the dataset is aggregated to the event level.}
+#' \item{source_author}{A character class variable that records the author of the source.}
+#' \item{source_type}{A character class variable that records the type of source.}
+#' \item{source_classification}{An integer class variable that denotes how reputable the source is considered.}
+#' \item{sampling}{An integer class variable that denotes whether the report was sampled from Factiva or another secondary source.}
+#' \item{unit_of_analysis}{A character class variable that records the unit of analysis.}
+#' \item{aggregation}{A character class variable that records the chosen aggregation model. Only relevant once the data is aggregated to the event level.}
+#' }
+#' @source The data set is based on newspaper articles identified through the
+#' Factiva news repository, as well as a range of human rights reports, election
+#' monitoring reports, and special commission reports.
+"maverick_event_report"
