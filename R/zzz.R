@@ -1,8 +1,8 @@
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage(
-    "Thank you for using the eventreport package! ",
-    "Please cite as:",
-    " Sebastian van Baalen & Kristine Hoglund (2025) Trials and Triangulations: Analyzing Aggregation Sensitivity in Event Data on Political Violence. Uppsala: Uppsala University."
+    "Thank you for using the eventreport package!\n",
+    "Please use citation(\"eventreport\") to see how to cite the package, ",
+    "the associated methods paper, and the enclosed MAVERICK dataset."
   )
 }
 

@@ -1,6 +1,6 @@
-585f01ee6a3d474089f650e1d2df23e6 *DESCRIPTION
+ecc39ec066a273ffab950c889c681622 *DESCRIPTION
 e6ea10c46e0de3a9ab050882b802646a *NAMESPACE
-0f381801c1587dbf0e3a2a42a60a9d21 *NEWS.md
+7e7a2f0ed8b61f377632b117033c3f98 *NEWS.md
 f3328ee17d1c5a1d8d12d49f4dbf31ae *R/aggregateData.R
 c737a37d46aaec2ca5f983b4506bbe5d *R/aggregate_maverick_con.R
 51e3ec3f5b92d2de643b0a804981a1c8 *R/aggregate_maverick_inf.R
@@ -25,14 +25,15 @@ d3cb924e20802de1da2cd7302ba89ce4 *R/mean_sd.R
 a730ca7c9e2e9c014cd8703195129573 *R/share_disagreement.R
 2354c4739bbf8d69bf2b95334d4164b3 *R/small_maverick_event_report.R
 b56ff2b193ecba52f9ec7f3b10cca008 *R/utils-pipe.R
-370b73fca9686cf451633c3bae79bac0 *R/zzz.R
-f0baef80cd6772e6ff1f0db4a04b1dfe *README.md
+cd1c72aacc9d9ab61fb657ab5644dbc8 *R/zzz.R
+add1408d15387aa195a6fcec0ac0f1e7 *README.md
 405f3b97933bbb95066fb3ade10b2001 *build/vignette.rds
 53063701f9b40a4e2130bb6d226c48af *data/maverick_event_report.rda
 c4382b8e8ccf19bcb11585f13a34ad53 *data/small_maverick_event_report.rda
+352d8f7bd7a14b0a6e0c9429bc816643 *inst/CITATION
 6abf475d34d857450020ad599003dd5c *inst/doc/get_started.R
 cec1b5545cb1e8ca78d2321271d13e94 *inst/doc/get_started.Rmd
-7c26c66ed46300593af4e99de8bfaf64 *inst/doc/get_started.html
+14695bc892be0606891e085cac43b28d *inst/doc/get_started.html
 6fb5817cd85922729945b7d934aa99a9 *man/aggregateData.Rd
 f73cdbc8a8b7cecefc059dc363511263 *man/aggregate_maverick_con.Rd
 4852cbe62fc54102af8f79961baae6b0 *man/aggregate_maverick_inf.Rd
@@ -72,4 +73,4 @@ ebea8325bdda041be00eb7dc81eef170 *tests/testthat/test-calc_max_precision.R
 b112acbb063187a807df9417e742c651 *tests/testthat/test-calc_mode_na_ignore.R
 57f7db0eb428b9a16141900727dcf4f4 *tests/testthat/test-calc_mode_numeric.R
 cec1b5545cb1e8ca78d2321271d13e94 *vignettes/get_started.Rmd
-da8d5adf3135d41901426c13779ed986 *vignettes/references.bib
+c123fb05911ad1d7c7f32ff6c217a415 *vignettes/references.bib

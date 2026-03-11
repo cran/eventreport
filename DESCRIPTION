@@ -1,7 +1,7 @@
 Package: eventreport
 Type: Package
 Title: Diagnose, Visualize, and Aggregate Event Report Level Data
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
   person(given = "Sebastian", family = "van Baalen", 
   email = "sebastian.van-baalen@pcr.uu.se", 
@@ -20,6 +20,10 @@ Description: Diagnose, visualize, and aggregate event report
     an event report level dataset that records all documented instances of 
     electoral violence from the first multiparty election to 2022 in 
     Côte d'Ivoire (1995-2022) and Kenya (1992-2022).
+    For more details see van Baalen and Höglund (2026)
+    <doi:10.1093/isq/sqag014>. Users of the enclosed MAVERICK dataset
+    should also cite van Baalen and Höglund (2026)
+    <doi:10.1093/jopres/xjaf012>.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
@@ -34,9 +38,9 @@ VignetteBuilder: knitr
 URL: https://github.com/sebastianvanbaalen/eventreport
 BugReports: https://github.com/sebastianvanbaalen/eventreport/issues
 NeedsCompilation: no
-Packaged: 2025-10-09 15:56:07 UTC; sebastian
+Packaged: 2026-03-10 18:04:28 UTC; sebastian
 Author: Sebastian van Baalen [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0003-3098-5587>),
   Kristine Höglund [aut] (ORCID: <https://orcid.org/0000-0001-7167-609X>)
 Repository: CRAN
-Date/Publication: 2025-10-16 11:40:07 UTC
+Date/Publication: 2026-03-11 00:20:16 UTC

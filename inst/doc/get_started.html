@@ -12,7 +12,7 @@
 
 <meta name="author" content="Sebastian van Baalen" />
 
-<meta name="date" content="2025-10-09" />
+<meta name="date" content="2026-03-10" />
 
 <title>Working with the eventreport package</title>
 
@@ -151,7 +151,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; }
 div.csl-bib-body { }
 div.csl-entry {
 clear: both;
-margin-bottom: 0em;
 }
 .hanging div.csl-entry {
 margin-left:2em;
@@ -364,7 +363,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Working with the eventreport package</h1>
 <h4 class="author">Sebastian van Baalen</h4>
-<h4 class="date">2025-10-09</h4>
+<h4 class="date">2026-03-10</h4>
 
 
 
@@ -405,8 +404,8 @@ event.</p>
 
     <script>
 
-      function styleCell_rcl5s69kz9ogada0spg3(i, j, css_id) {
-          var table = document.getElementById("tinytable_rcl5s69kz9ogada0spg3");
+      function styleCell_zjf7nkedrwsd3wf32b3t(i, j, css_id) {
+          var table = document.getElementById("tinytable_zjf7nkedrwsd3wf32b3t");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -416,7 +415,7 @@ event.</p>
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_rcl5s69kz9ogada0spg3');
+        var table = document.getElementById('tinytable_zjf7nkedrwsd3wf32b3t');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -424,8 +423,8 @@ event.</p>
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_rcl5s69kz9ogada0spg3(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_rcl5s69kz9ogada0spg3");
+      function spanCell_zjf7nkedrwsd3wf32b3t(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_zjf7nkedrwsd3wf32b3t");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -455,14 +454,14 @@ event.</p>
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 6, j: 0 }, { i: 6, j: 1 }, { i: 6, j: 2 }, { i: 6, j: 3 }, { i: 6, j: 4 }, { i: 6, j: 5 },  ], css_id: 'tinytable_css_6z0w7eqt05fw8hwvld6d',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_yjkyog7mqfdvkvvd2tf6',}, 
+          { positions: [ { i: 6, j: 0 }, { i: 6, j: 1 }, { i: 6, j: 2 }, { i: 6, j: 3 }, { i: 6, j: 4 }, { i: 6, j: 5 },  ], css_id: 'tinytable_css_srpmkbj4s89umh3tmpbj',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_87mkvl5zg0own1lg7v4n',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_rcl5s69kz9ogada0spg3(cell.i, cell.j, group.css_id);
+                  styleCell_zjf7nkedrwsd3wf32b3t(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -470,11 +469,11 @@ event.</p>
 
     <style>
 
-.table td.tinytable_css_6z0w7eqt05fw8hwvld6d, .table th.tinytable_css_6z0w7eqt05fw8hwvld6d { border-bottom: solid #d3d8dc 0.1em; }
-.table td.tinytable_css_yjkyog7mqfdvkvvd2tf6, .table th.tinytable_css_yjkyog7mqfdvkvvd2tf6 { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+.table td.tinytable_css_srpmkbj4s89umh3tmpbj, .table th.tinytable_css_srpmkbj4s89umh3tmpbj { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_87mkvl5zg0own1lg7v4n, .table th.tinytable_css_87mkvl5zg0own1lg7v4n { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_rcl5s69kz9ogada0spg3" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_zjf7nkedrwsd3wf32b3t" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -568,11 +567,10 @@ quality.</p>
 package users to also consult the associated methods paper, which
 provides a detailed overview of the strengths and limitations of our
 suggested approach, as well as the underlying reasoning behind the
-different aggregation functions <span class="citation">(<a href="#ref-vanbaalenhoglund2025">van Baalen and Höglund
-2025</a>)</span>. For other in-depth analyses of the benefits and
-limitations of working with event report level data and automatic
-aggregation procedures, we recommend <span class="citation">Cook and
-Weidmann (<a href="#ref-cookweidmann2019">2019</a>)</span> and <span class="citation">Weidmann and Geelmuyden Rød (<a href="#ref-weidmanngeelmuydenrod2015">2015</a>)</span>.</p>
+different aggregation functions <span class="citation">(<a href="#ref-vanbaalenhoglund2025"><span class="nocase">van Baalen and
+Höglund</span> 2026</a>)</span>. For other in-depth analyses of the
+benefits and limitations of working with event report level data and
+automatic aggregation procedures, we recommend <span class="citation">Cook and Weidmann (<a href="#ref-cookweidmann2019">2019</a>)</span> and <span class="citation">Weidmann and Geelmuyden Rød (<a href="#ref-weidmanngeelmuydenrod2015">2015</a>)</span>.</p>
 </div>
 <div id="why-the-eventreport-package" class="section level2">
 <h2>Why the <code>eventreport</code> package?</h2>
@@ -582,10 +580,10 @@ data to the event level. <span class="citation">Cook and Weidmann (<a href="#ref
 <code>R</code> functions such as <code>max</code>, <code>min</code>, and
 <code>mean</code> to aggregate the <a href="https://mmadatabase.org/">Mass Mobilization in Autocracies
 Database</a>, an event report level dataset on protest events. However,
-as we have detailed elsewhere <span class="citation">(<a href="#ref-vanbaalenhoglund2025">van Baalen and Höglund
-2025</a>)</span>, the aggregation of event reports often demands
-additional functionalities, such as the use of tie-break rules or
-information contained in meta variables.</p>
+as we have detailed elsewhere <span class="citation">(<a href="#ref-vanbaalenhoglund2025"><span class="nocase">van Baalen and
+Höglund</span> 2026</a>)</span>, the aggregation of event reports often
+demands additional functionalities, such as the use of tie-break rules
+or information contained in meta variables.</p>
 <p>The <code>eventreport</code> package adds several functionalities not
 contained in existing software. Among those benefits, the package:</p>
 <ul>
@@ -634,8 +632,7 @@ only include events recorded by at least two sources, whereas other
 datasets include both single- and multi-source events. Moreover, some
 variables may harbor more divergences in their values for the same event
 than other variables. These differences mean that not all datasets and
-variables are equally sensitive to aggregation choices <span class="citation">(<a href="#ref-vanbaalenhoglund2025">van Baalen and
-Höglund 2025</a>)</span>.</p>
+variables are equally sensitive to aggregation choices <span class="citation">(<a href="#ref-vanbaalenhoglund2025"><span class="nocase">van Baalen and Höglund</span> 2026</a>)</span>.</p>
 <div id="calculate-unique-values-using-dscore" class="section level3">
 <h3>Calculate unique values using <code>dscore</code></h3>
 <p><code>eventreport</code> includes several functions that allow users
@@ -773,8 +770,8 @@ all diagnostics for a set of variables with one command:</p>
 
     <script>
 
-      function styleCell_hk2jhw2aflbjnxqmurns(i, j, css_id) {
-          var table = document.getElementById("tinytable_hk2jhw2aflbjnxqmurns");
+      function styleCell_l3b3oupa6ckwucngosdv(i, j, css_id) {
+          var table = document.getElementById("tinytable_l3b3oupa6ckwucngosdv");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -784,7 +781,7 @@ all diagnostics for a set of variables with one command:</p>
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_hk2jhw2aflbjnxqmurns');
+        var table = document.getElementById('tinytable_l3b3oupa6ckwucngosdv');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -792,8 +789,8 @@ all diagnostics for a set of variables with one command:</p>
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_hk2jhw2aflbjnxqmurns(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_hk2jhw2aflbjnxqmurns");
+      function spanCell_l3b3oupa6ckwucngosdv(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_l3b3oupa6ckwucngosdv");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -823,14 +820,14 @@ all diagnostics for a set of variables with one command:</p>
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 }, { i: 3, j: 6 },  ], css_id: 'tinytable_css_wjyykupjrx4qnizdvi2u',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 }, { i: 0, j: 6 },  ], css_id: 'tinytable_css_nrkwe6pfm80b34uulk0w',}, 
+          { positions: [ { i: 3, j: 0 }, { i: 3, j: 1 }, { i: 3, j: 2 }, { i: 3, j: 3 }, { i: 3, j: 4 }, { i: 3, j: 5 }, { i: 3, j: 6 },  ], css_id: 'tinytable_css_kyuaxrl2clyas7w9v5xx',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 }, { i: 0, j: 6 },  ], css_id: 'tinytable_css_hhl1pc4osntlowtlf69e',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_hk2jhw2aflbjnxqmurns(cell.i, cell.j, group.css_id);
+                  styleCell_l3b3oupa6ckwucngosdv(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -838,11 +835,11 @@ all diagnostics for a set of variables with one command:</p>
 
     <style>
 
-.table td.tinytable_css_wjyykupjrx4qnizdvi2u, .table th.tinytable_css_wjyykupjrx4qnizdvi2u { border-bottom: solid #d3d8dc 0.1em; }
-.table td.tinytable_css_nrkwe6pfm80b34uulk0w, .table th.tinytable_css_nrkwe6pfm80b34uulk0w { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+.table td.tinytable_css_kyuaxrl2clyas7w9v5xx, .table th.tinytable_css_kyuaxrl2clyas7w9v5xx { border-bottom: solid #d3d8dc 0.1em; }
+.table td.tinytable_css_hhl1pc4osntlowtlf69e, .table th.tinytable_css_hhl1pc4osntlowtlf69e { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
 </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_hk2jhw2aflbjnxqmurns" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_l3b3oupa6ckwucngosdv" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -1308,16 +1305,17 @@ choices:</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2 class="unnumbered">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-cookweidmann2019" class="csl-entry">
 Cook, Scott J., and Nils B. Weidmann. 2019. <span>“Lost in Aggregation:
 Improving Event Analysis with Report-Level Data.”</span> <em>American
 Journal of Political Science</em> 63 (1): 250–64. <a href="https://doi.org/10.1111/ajps.12398">https://doi.org/10.1111/ajps.12398</a>.
 </div>
 <div id="ref-vanbaalenhoglund2025" class="csl-entry">
-van Baalen, Sebastian, and Kristine Höglund. 2025. <span>“Trials and
-Triangulations: Analyzing Aggregation Sensitivity in Event Data on
-Political Violence.”</span>
+<span class="nocase">van Baalen, Sebastian, and Kristine Höglund</span>.
+2026. <span>“Trials and Triangulations: Analyzing Aggregation
+Sensitivity in Event Data on Political Violence.”</span>
+<em>International Studies Quarterly</em> 70 (1): sqag014. <a href="https://doi.org/10.1093/isq/sqag014">https://doi.org/10.1093/isq/sqag014</a>.
 </div>
 <div id="ref-weidmanngeelmuydenrod2015" class="csl-entry">
 Weidmann, Nils B., and Espen Geelmuyden Rød. 2015. <span>“Making

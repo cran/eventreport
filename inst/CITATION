@@ -1,0 +1,35 @@
+citation(auto = meta)
+
+citHeader("For the methods paper associated with this package, please cite:")
+
+bibentry(
+  bibtype = "Article",
+  title = "Trials and Triangulations: Analyzing Aggregation Sensitivity in Event Data on Political Violence",
+  author = c(
+    person("Sebastian", "van Baalen"),
+    person("Kristine", "Höglund")
+  ),
+  journal = "International Studies Quarterly",
+  year = "2026",
+  volume = "70",
+  number = "1",
+  pages = "sqag014",
+  doi = "10.1093/isq/sqag014"
+)
+
+citHeader("If you use the enclosed MAVERICK dataset, please also cite:")
+
+bibentry(
+  bibtype = "Article",
+  title = "Introducing the Modes and Agents of Election-Related Violence in Côte d’Ivoire and Kenya (MAVERICK) Dataset",
+  author = c(
+    person("Sebastian", "van Baalen"),
+    person("Kristine", "Höglund")
+  ),
+  journal = "Journal of Peace Research",
+  year = "2026",
+  volume = "63",
+  number = "1",
+  pages = "98-106",
+  doi = "10.1093/jopres/xjaf012"
+)
